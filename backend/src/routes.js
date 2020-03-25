@@ -4,7 +4,7 @@ const express = require('express');
 const OngController = require('./controllers/OngController');
 const IncidentsController = require('./controllers/IncidentController');
 const SessionController = require('./controllers/SessionController');
-
+const ProfileController = require('./controllers/ProfileController');
 
 const routes = express.Router();
 
@@ -13,6 +13,7 @@ routes.post('/sessions', SessionController.store);
 
 
 // Ongs
+routes.get('/profile', ProfileController.index);
 routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.store)
 
