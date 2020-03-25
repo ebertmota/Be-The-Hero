@@ -16,7 +16,7 @@ function Profile() {
   const history = useHistory();
 
   useEffect(() => {
-    api.get('incidents', {
+    api.get('profile', {
       headers: {
         Authorization: ongId,
       }
