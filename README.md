@@ -9,6 +9,14 @@
 
 <p>
   O objetivo da aplicação é unir contribuintes a organizações não governamentais (ONGS), permitindo que
-  cadastradas possam adicionar casos e arrecadar dinheiro para sua solução promovendo ações sociais e solidariedade.
+  cadastradas possam adicionar casos e arrecadar dinheiro para sua solução, promovendo ações sociais e solidariedade.
 </p>
 
+<br>
+
+<h2 align="center">Estrutura do App</h2>
+
+<h3>Web</h3>
+<p>
+  Na versão web  
+</p>
