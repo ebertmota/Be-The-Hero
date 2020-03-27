@@ -17,6 +17,18 @@
 <h2 align="center">Estrutura do App</h2>
 
 <h3>Web</h3>
+<img src="https://user-images.githubusercontent.com/48302018/77808445-19357700-706a-11ea-99e9-4dfea7e1cdcc.png"/>
 <p>
-  Na versão web  
+  A versão web permite que uma ONG, se cadastre ,faça logon e gerencie seus casos, criando-os com seu respectivo 
+  nome,descrição e valor de contribuição, a ong também poderá deletar casos quando necessário.  
 </p>
+
+<h4>Tecnologias Utilizadas</h4>
+<ul>
+  <li>ReactJS</li>
+  <li>Express</li>
+  <li>Axios</li>
+  <li>CSS</li>
+</ul>
+
+<h3>Mobile</h3>
