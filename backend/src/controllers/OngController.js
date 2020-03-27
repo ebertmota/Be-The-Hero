@@ -1,5 +1,5 @@
 const connection = require('../database/connection');
-const crypto = require('crypto');
+const generateUniqueId = require('../utils/generateUniqueId');
 
 module.exports = {
   async index(req, res) {
@@ -17,11 +17,11 @@ module.exports = {
       whatsapp: whatsapp,
     }).select('*');
 
-    if (checkOngExists) {
+    if (checkOngExists.length > 0) {
       return res.status(400).json({ error: 'Ong already exists' })
     }
     
-    const id = crypto.randomBytes(4).toString('HEX');
+    const id = generateUniqueId();
     
     await connection('ongs').insert({
       id,
