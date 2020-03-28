@@ -28,7 +28,7 @@
   <li>ReactJS</li>
   <li>Express</li>
   <li>Axios</li>
-  <li>CSS</li>
+  <li>Feather Icons</li>
 </ul>
 
 <h3>Mobile</h3>
