@@ -26,7 +26,6 @@
 <h4>Tecnologias Utilizadas</h4>
 <ul>
   <li>ReactJS</li>
-  <li>Express</li>
   <li>Axios</li>
   <li>Feather Icons</li>
 </ul>
@@ -46,3 +45,67 @@
   <li>intl</li>
   <li>Feather Icons</li>
 </ul>
+
+<h3>Backend</h3>
+
+Todo o servidor foi construido em Node com Express, usando o Knex como ORM para as migrations de comunicação com nosso banco
+SQLite,usamos celebrate para as validações da requisição,e Jest para Test-driven development (TDD).
+
+<h4 align="center">Rotas</h4>
+
+'/sessions' - POST
+```
+  Recebe no body um id referente a um ONG, busca no banco de dados a Ong e 
+  retorna a Ong que pertence a esse id,usada para fazer o login da sessão de uma ong.
+```
+'/profile' - GET
+```
+  Usada para listagem de dados na Web.
+  Recebe uma authorization em seu Header e retorna os casos cadastrados de 
+  uma ONG específica.
+```
+
+'/incidents' - GET
+```
+  Usada para listagem de dados no Mobile.
+  Recebe um query param que define a página que o usuario está,
+  e retorna todos os casos.
+```
+'/incidents/:id' - DELETE
+```
+  Recebe um route param que informa o id do caso a ser deletado.
+```
+
+'/incidents' - POST
+```
+  Usada para criar um novo caso
+  Recebe no body: title,description,value,
+  e retorna o id do caso criada.
+```
+
+'/ongs' - GET
+```
+  Retorna todas as ongs cadastradas
+```
+
+'/ongs' - POST
+```
+  Usada para cadastrar uma nova ONG.
+   Recebe no body: name,email,whatsapp,city,uf.
+   E retorna o id da ONG criada.
+```
+
+<h4>Tecnologias Utilizadas</h4>
+<ul>
+  <li>NodeJS</li>
+  <li>Express</li>
+  <li>Jest</li>
+  <li>supertest</li>
+  <li>Knex</li>
+  <li>SQLite</li>
+  <li>cors</li>
+  <li>cross-env</li>
+  <li>celebrate</li>
+  <li>bee-queue</li>
+</ul>
+
