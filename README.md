@@ -55,21 +55,19 @@ SQLite,usamos celebrate para as validações da requisição,e Jest para Test-dr
 
 '/sessions' - POST
 ```
-  Recebe no body um id referente a um ONG, busca no banco de dados a Ong e 
-  retorna a Ong que pertence a esse id,usada para fazer o login da sessão de uma ong.
+  Recebe no body um id referente a um ONG, busca no banco de dados a Ong e retorna a Ong que 
+  pertence a esse id,usada para fazer o login da sessão de uma ong.
 ```
 '/profile' - GET
 ```
   Usada para listagem de dados na Web.
-  Recebe uma authorization em seu Header e retorna os casos cadastrados de 
-  uma ONG específica.
+  Recebe uma authorization em seu Header e retorna os casos cadastrados de uma ONG específica.
 ```
 
 '/incidents' - GET
 ```
   Usada para listagem de dados no Mobile.
-  Recebe um query param que define a página que o usuario está,
-  e retorna todos os casos.
+  Recebe um query param que define a página que o usuario está,e retorna todos os casos.
 ```
 '/incidents/:id' - DELETE
 ```
@@ -80,7 +78,7 @@ SQLite,usamos celebrate para as validações da requisição,e Jest para Test-dr
 ```
   Usada para criar um novo caso
   Recebe no body: title,description,value,
-  e retorna o id do caso criada.
+  Retorna o id do caso criada.
 ```
 
 '/ongs' - GET
@@ -91,8 +89,8 @@ SQLite,usamos celebrate para as validações da requisição,e Jest para Test-dr
 '/ongs' - POST
 ```
   Usada para cadastrar uma nova ONG.
-   Recebe no body: name,email,whatsapp,city,uf.
-   E retorna o id da ONG criada.
+  Recebe no body: name,email,whatsapp,city,uf.
+  E retorna o id da ONG criada.
 ```
 
 <h4>Tecnologias Utilizadas</h4>
