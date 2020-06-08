@@ -27,7 +27,6 @@
 <ul>
   <li>ReactJS</li>
   <li>Axios</li>
-  <li>Feather Icons</li>
 </ul>
 
 <h3>Mobile</h3>
@@ -105,5 +104,6 @@ SQLite,usamos celebrate para as validações da requisição,e Jest para Test-dr
   <li>cross-env</li>
   <li>celebrate</li>
   <li>bee-queue</li>
+  <li>TDD</li>
 </ul>
 
